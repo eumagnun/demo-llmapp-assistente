@@ -24,12 +24,12 @@ sh run.sh
 ```
 Caso queira gerar uma imagem para implantação no Cloud Run:
 
- - Gerar imagem: docker build -t us-central1-docker.pkg.dev/{PROJECT-ID}/demo-assistente/meu-assistente-001 .
+ - Gerar imagem:
 ````
-docker build -t us-central1-docker.pkg.dev/{PROJECT-ID}/demo-assistente/meu-assistente-001 .
+docker build -t us-central1-docker.pkg.dev/{SEU-PROJECT-ID}/demo-assistente/meu-assistente-001 .
 ````
  - Enviar imagem para o Registry:
 ````
-docker push us-central1-docker.pkg.dev/{PROJECT-ID}/demo-assistente/meu-assistente-001
+docker push us-central1-docker.pkg.dev/{SEU-PROJECT-ID}/demo-assistente/meu-assistente-001
 ````
 
