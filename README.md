@@ -1,11 +1,27 @@
 Passos para execução local ou no Cloud Shell:
 
  - Clonar esse repo
- - Criar ambiente virtual: python -m venv venv_demo_assistente
- - Ativar ambiente virtual: source venv_demo_assistente/bin/activate
- - Instalar dependências: pip install -r requirements.txt
- - Executar app: sh run.sh
-
+````
+git clone git@github.com:eumagnun/demo-llmapp-assistente.git
+````
+ - Criar ambiente virtual:
+````
+python -m venv venv_demo_assistente
+````
+ - Ativar ambiente virtual:
+```
+source venv_demo_assistente/bin/activate
+```
+ - Instalar dependências:
+```
+pip install -r requirements.txt
+#ou
+pip  install --force-reinstall -r requirements.txt
+```
+ - Executar app:
+```
+sh run.sh
+```
 Caso queira gerar uma imagem para implantação no Cloud Run:
 
  - Gerar imagem: docker build -t us-central1-docker.pkg.dev/{PROJECT-ID}/demo-assistente/meu-assistente-001 .
